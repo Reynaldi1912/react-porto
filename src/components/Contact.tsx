@@ -9,20 +9,18 @@ function Contact() {
   const [message, setMessage] = useState<string>('');
   const [messageError, setMessageError] = useState<boolean>(false);
 
-  const sendMessage = () => {
+  const handleSend = (platform: 'whatsapp' | 'linkedin') => {
     setMessageError(message === '');
 
     if (message !== '') {
-      // WhatsApp link with the message
-      const whatsappLink = `https://wa.me/6295745785615?text=${encodeURIComponent(message)}`;
-
-      // LinkedIn message (you can replace "your-linkedin-profile" with your LinkedIn URL)
-      const linkedInLink = `https://www.linkedin.com/in/rynld?message=${encodeURIComponent(message)}`;
-
-      // Open WhatsApp or LinkedIn link based on preference
-      window.open(whatsappLink, '_blank');
-      // Or for LinkedIn:
-      // window.open(linkedInLink, '_blank');
+      const encodedMessage = encodeURIComponent(message);
+      if (platform === 'whatsapp') {
+        const whatsappLink = `https://wa.me/6285745785615?text=${encodedMessage}`;
+        window.open(whatsappLink, '_blank');
+      } else if (platform === 'linkedin') {
+        const linkedInLink = `https://www.linkedin.com/in/rynld?message=${encodedMessage}`;
+        window.open(linkedInLink, '_blank');
+      }
     }
   };
 
@@ -38,7 +36,7 @@ function Contact() {
             autoComplete="off"
             className='contact-form'
           >
-            <TextField
+           <TextField
               required
               label="Message"
               placeholder="Send me any inquiries or questions"
@@ -49,10 +47,34 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
+              sx={{
+                input: { color: '#fff' }, // warna teks
+                textarea: { color: '#fff' }, // warna teks untuk multiline
+                label: { color: '#ccc' }, // warna label
+                '& .MuiOutlinedInput-root': {
+                  '& fieldset': { borderColor: '#ccc' },
+                  '&:hover fieldset': { borderColor: '#fff' },
+                  '&.Mui-focused fieldset': { borderColor: '#fff' },
+                },
+              }}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendMessage}>
-              Send
-            </Button>
+
+            <div style={{ display: 'flex', gap: '10px', marginTop: '16px' }}>
+              <Button
+                variant="contained"
+                endIcon={<SendIcon />}
+                onClick={() => handleSend('whatsapp')}
+              >
+                WhatsApp
+              </Button>
+              <Button
+                variant="contained"
+                endIcon={<SendIcon />}
+                onClick={() => handleSend('linkedin')}
+              >
+                LinkedIn
+              </Button>
+            </div>
           </Box>
         </div>
       </div>

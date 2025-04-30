@@ -16,6 +16,8 @@ code {
 .main-container {
   position: relative;
   background-color: #0d1116;
+  overflow-x: hidden;
+  width: 100%;
 
 }
 
@@ -99,6 +101,9 @@ p, a, h1, h2, h3, h4, h5, label, button {
     background-color: #f8f9fa;
   }
 
+  .h1{
+    font-size: 40px;
+  }
   p, a, h1, h2, h3, h4, h5, label, button {
     color: #0d1116;
   }
