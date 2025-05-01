@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem !important;
@@ -18,7 +16,6 @@ code {
   background-color: #0d1116;
   overflow-x: hidden;
   width: 100%;
-
 }
 
 a {
@@ -27,7 +24,7 @@ a {
 
 a:hover {
   color: #5000ca;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 p, a, h1, h2, h3, h4, h5, label, button {
@@ -38,17 +35,17 @@ p, a, h1, h2, h3, h4, h5, label, button {
 .navigation-bar {
   justify-content: space-between;
   background-color: #0d1116;
+}
 
-  button {
-    font-size: 1.1rem;
-    font-family: "Lato", sans-serif;
-    text-transform: initial;
-    padding: 6px 10px;
-  }
+.navigation-bar button {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  text-transform: initial;
+  padding: 6px 10px;
+}
 
-  svg {
-    cursor: pointer;
-  }
+.navigation-bar svg {
+  cursor: pointer;
 }
 
 .navigation-bar-responsive {
@@ -70,12 +67,12 @@ p, a, h1, h2, h3, h4, h5, label, button {
 .header-image {
   width: 100%;
   height: 450px;
+}
 
-  img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-  }
+.header-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
 
 .mobile-menu-top {
@@ -96,65 +93,126 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
 .light-mode {
   background-color: #f8f9fa;
-
-  .navigation-bar {
-    background-color: #f8f9fa;
-  }
-
-  .h1{
-    font-size: 40px;
-  }
-  p, a, h1, h2, h3, h4, h5, label, button {
-    color: #0d1116;
-  }
-
-  a:hover {
-    color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-  }
-
-  .navigation-bar svg {
-    color: #0d1116;
-  }
-
-  .about-section {
-    background-image: url("./assets/images/bg-light.png");
-  }
-
-  .skills-container svg {
-    color: #0d1116;
-  }
-
-  .chip {
-    background-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  }
-
-  .vertical-timeline::before {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-
-  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  }
-
-  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-    color: gray;
-  }
-
-  .vertical-timeline-element-content-arrow {
-    border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
-  }
-
-  .flex-chips .chip-title {
-    color: #0d1116;
-  }
 }
 
-@media screen {
-  @media (max-width: 768px) {
-    .items-container {
-      padding: 5% 5%;
-    }
+.light-mode .navigation-bar {
+  background-color: #f8f9fa;
+}
+
+.light-mode .h1 {
+  font-size: 40px;
+}
+
+.light-mode p, 
+.light-mode a, 
+.light-mode h1, 
+.light-mode h2, 
+.light-mode h3, 
+.light-mode h4, 
+.light-mode h5, 
+.light-mode label, 
+.light-mode button {
+  color: #0d1116;
+}
+
+.light-mode a:hover {
+  color: #5000ca;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.light-mode .navigation-bar svg {
+  color: #0d1116;
+}
+
+.light-mode .about-section {
+  background-image: url("./assets/images/bg-light.png");
+}
+
+.light-mode .skills-container svg {
+  color: #0d1116;
+}
+
+.light-mode .chip {
+  background-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.light-mode .vertical-timeline::before {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.light-mode .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.light-mode .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  color: gray;
+}
+
+.light-mode .vertical-timeline-element-content-arrow {
+  border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+.light-mode .flex-chips .chip-title {
+  color: #0d1116;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #0d1116;
+}
+
+.dark-mode .navigation-bar {
+  background-color: #0d1116;
+}
+
+.dark-mode p, 
+.dark-mode a, 
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode label, 
+.dark-mode button {
+  color: white;
+}
+
+.dark-mode a:hover {
+  color: #5000ca;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.dark-mode .navigation-bar svg {
+  color: white;
+}
+
+.dark-mode .chip {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .vertical-timeline::before {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+  box-shadow: 0px 3px 1px -2px rgba(255, 255, 255, 0.2), 0px 2px 2px 0px rgba(255, 255, 255, 0.14), 0px 1px 5px 0px rgba(255, 255, 255, 0.12);
+}
+
+.dark-mode .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+  color: gray;
+}
+
+.dark-mode .vertical-timeline-element-content-arrow {
+  border-right: 7px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-mode .flex-chips .chip-title {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .items-container {
+    padding: 5% 5%;
   }
 }

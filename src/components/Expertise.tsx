@@ -28,7 +28,7 @@ const labelsSecond = [
     "Docker",
     "AWS",
     "Linux",
-    "Selenium Automation",
+    "Selenium",
     "Debian Based Server"
 ];
 
@@ -41,7 +41,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Full Stack Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <p>I have built a diverse array of applications from scratch using modern technologies such as React, Laravel, Flutter. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -53,7 +53,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <p>Once the application is built, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
