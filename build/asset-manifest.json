@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.70cdb56b.css",
+    "main.css": "/static/css/main.607c4562.css",
     "main.js": "/static/js/main.8b048fd4.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/mock10.png": "/static/media/mock10.2d05b02ba569a430a255.png",
@@ -13,9 +13,9 @@
     "static/media/exam.png": "/static/media/exam.b21aeb156e8d18c17846.png",
     "static/media/schoolprofile.png": "/static/media/schoolprofile.03421934eceb5e51a330.png",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark3.png": "/static/media/bg-dark3.7834749598d057239939.png",
     "static/media/project-ideas.png": "/static/media/project-ideas.3d25851ffdec9bec90f0.png",
     "static/media/dashboard.png": "/static/media/dashboard.c11e8dc1c9f6872fdb26.png",
-    "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/04 - Homepage.png": "/static/media/04 - Homepage.79e1fd89bfb0e6aeba74.png",
     "static/media/05 - Detail Ide 3.png": "/static/media/05 - Detail Ide 3.0dc2928450ede016a9e3.png",
     "static/media/05 - Detail Ide 1.png": "/static/media/05 - Detail Ide 1.46b90c189fead6e02072.png",
@@ -32,12 +32,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.70cdb56b.css.map": "/static/css/main.70cdb56b.css.map",
+    "main.607c4562.css.map": "/static/css/main.607c4562.css.map",
     "main.8b048fd4.js.map": "/static/js/main.8b048fd4.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70cdb56b.css",
+    "static/css/main.607c4562.css",
     "static/js/main.8b048fd4.js"
   ]
 }
