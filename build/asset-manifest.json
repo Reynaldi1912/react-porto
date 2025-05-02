@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4af78cd4.css",
-    "main.js": "/static/js/main.b356104c.js",
+    "main.css": "/static/css/main.70cdb56b.css",
+    "main.js": "/static/js/main.ec940e2e.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/mock10.png": "/static/media/mock10.2d05b02ba569a430a255.png",
     "static/media/simpus-mobile.png": "/static/media/simpus-mobile.59b5b66ab1c1c42c7734.png",
@@ -14,19 +14,30 @@
     "static/media/schoolprofile.png": "/static/media/schoolprofile.03421934eceb5e51a330.png",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/project-ideas.png": "/static/media/project-ideas.3d25851ffdec9bec90f0.png",
+    "static/media/dashboard.png": "/static/media/dashboard.c11e8dc1c9f6872fdb26.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/04 - Homepage.png": "/static/media/04 - Homepage.79e1fd89bfb0e6aeba74.png",
+    "static/media/05 - Detail Ide 3.png": "/static/media/05 - Detail Ide 3.0dc2928450ede016a9e3.png",
+    "static/media/05 - Detail Ide 1.png": "/static/media/05 - Detail Ide 1.46b90c189fead6e02072.png",
+    "static/media/05 - Detail Ide 2.png": "/static/media/05 - Detail Ide 2.c60b0b1514aebd976ae5.png",
+    "static/media/Login Page.png": "/static/media/Login Page.eee5d6af79be390dfb05.png",
+    "static/media/03 - Landing Page.png": "/static/media/03 - Landing Page.6649b0cfc132407f5e50.png",
+    "static/media/error.png": "/static/media/error.d2df787695ac259dbada.png",
+    "static/media/Exception Menu.png": "/static/media/Exception Menu.c70cb12bd6f22bc75fea.png",
+    "static/media/Input Kunjungan.png": "/static/media/Input Kunjungan.b1766f8cea318ac5e8c4.png",
     "static/media/my-photos.jpeg": "/static/media/my-photos.38817eb404b464dccd73.jpeg",
+    "static/media/01 - Sign Up.png": "/static/media/01 - Sign Up.791d03c97bd723c72167.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.4af78cd4.css.map": "/static/css/main.4af78cd4.css.map",
-    "main.b356104c.js.map": "/static/js/main.b356104c.js.map",
+    "main.70cdb56b.css.map": "/static/css/main.70cdb56b.css.map",
+    "main.ec940e2e.js.map": "/static/js/main.ec940e2e.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4af78cd4.css",
-    "static/js/main.b356104c.js"
+    "static/css/main.70cdb56b.css",
+    "static/js/main.ec940e2e.js"
   ]
 }

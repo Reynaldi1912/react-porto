@@ -1,176 +1,244 @@
-/* General styling for images inside the modal */
-.modal .slick-slider {
-    margin-bottom: 24px;
-    padding: 0 10px; /* Optional: add padding to avoid edge clipping */
-  }
-  .stack {
-    color: #6c757d;  // Muted gray color
-    font-size: 1rem;  // Optional: adjust font size if necessary
-    font-weight: normal;  // Optional: reduce boldness if needed
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInOverlay 0.5s ease-in-out;
+  z-index: 9999;
+  overflow: hidden; /* Mencegah halaman utama discroll */
 }
 
-  
-  .modal .slick-slide img {
-    max-height: 450px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-    margin: 0 auto;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Optional: box shadow for images */
-  }
-  
-  /* Adjust spacing between carousel items */
-  .slick-slide {
-    padding: 0 15px; /* Add horizontal padding between slides */
-  }
-  
-  .slick-track {
-    display: flex; /* Make the track flexible */
-    gap: 20px; /* Ensure there is space between slides */
-  }
-  
-  /* Disable scaling on hover for carousel images */
-  .slick-slide img {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .slick-slide img:hover {
-    transform: none; /* Avoid scaling images on hover */
-  }
-  
-  /* Modal overlay */
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.85); /* Darker overlay for modal focus */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: fadeInOverlay 0.5s ease-in-out;
-    z-index: 9999;
-  }
-  
-  /* Fade in animation */
-  @keyframes fadeInOverlay {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  /* Modal box */
-  .modal {
-    background-color: #111;
-    padding: 40px 20px;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 1000px;
-    animation: bubbleIn 0.7s ease;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-    color: #f5f5f5;
-    cursor: default;
-  }
-  
-  /* Bubble entrance animation */
-  @keyframes bubbleIn {
-    0% {
-      transform: scale(0.3);
-      opacity: 0;
-    }
-    60% {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  /* Inside modal - text style */
-  .modal h2 {
-    margin-bottom: 16px;
-    font-size: 2rem;
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  .modal p {
-    margin-bottom: 24px;
-    font-size: 1rem;
-    color: #ccc;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Close button style */
-  .modal button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    background: #ff4757;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-  }
-  
-  .modal button:hover {
-    background: #e84118;
-    transform: scale(1.05);
-  }
-  
-  /* Projects container */
+@media (min-width: 769px) {
   .projects-container {
     display: flex;
     flex-direction: column;
     padding: 5% 10%;
     text-align: left;
   }
-  
+
   .projects-container .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
   }
-  
+
   .projects-container .projects-grid .project {
     text-align: left;
   }
-  
-  .project h2:hover {
-    text-decoration: underline;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+
+/* Animasi overlay */
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Modal box */
+.modal {
+  background-color: #111;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  cursor: default;
+  max-height: 90vh;
+  overflow: hidden; /* Hanya konten yang scroll, bukan header */
+  display: flex;
+  flex-direction: column;
+  animation: bubbleIn 0.7s ease;
+  position: relative;
+}
+
+/* Animasi masuk */
+@keyframes bubbleIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
   }
-  
-  .zoom {
-    border-radius: 5px;
-    transition: transform .2s;
-    margin: 0 auto;
-  }
-  
-  .zoom:hover {
+  60% {
     transform: scale(1.05);
+    opacity: 0.9;
   }
-  
-  /* Responsive adjustments for smaller screens */
-  @media (max-width: 700px) {
-    .projects-container {
-      display: block;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-  
-    .projects-container .projects-grid {
-      display: block;
-    }
-  
-    .projects-container .projects-grid .project {
-      padding-bottom: 5%;
-    }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
-  
+}
+
+.modal-header {
+  position: relative;
+  height: 50px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Tombol X tetap di kanan */
+.close-button {
+  font-size: 1.8rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.close-button:hover {
+  color: #ff4757;
+}
+
+/* Judul ditaruh di bawah header tapi tetap center */
+.titleModal {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #fff;
+}
+
+/* Konten scrollable */
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(90vh - 72px); /* sisakan ruang untuk header */
+}
+
+/* Paragraf dan teks */
+.modal-body h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal-body p {
+  margin-bottom: 24px;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.role-text {
+  color: white; /* Membuat teks menjadi putih */
+}
+
+.stack-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.stack {
+  color: #ccc;
+  font-size: 1rem;
+  display: inline-block; /* agar span tidak full width */
+}
+
+
+/* Gambar carousel */
+.modal .slick-slider {
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
+.modal .slick-slide img {
+  max-height: 450px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal .slick-slide img:hover {
+  transform: none;
+}
+
+/* Flip image (jika ada) */
+.flip-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Slick carousel spacing */
+.slick-slide {
+  padding: 0 15px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 20px;
+}
+
+/* Modal content class (opsional jika dipakai) */
+.modal-content {
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+/* Zoom image */
+.zoom {
+  border-radius: 15px;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 5%;
+    text-align: left;
+  }
+  .modal {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    max-height: 90vh;
+  }
+
+  .modal-body h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-body p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .modal .slick-slide img {
+    max-height: 300px;
+  }
+
+  .close-button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive: Mobile kecil */
+@media (max-width: 480px) {
+  .modal-body h2 {
+    font-size: 1.25rem;
+  }
+
+  .modal-body p {
+    font-size: 0.85rem;
+  }
+
+  .close-button {
+    font-size: 1.4rem;
+  }
+}

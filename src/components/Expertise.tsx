@@ -19,7 +19,11 @@ const labelsFirst = [
     "Golang",
     "PHP",
     "Flutter",
-    "Dart"
+    "Dart",
+    "SQL",
+    "Oracle Database",
+    "PostgreSql",
+    "MySql"
 ];
 
 const labelsSecond = [
