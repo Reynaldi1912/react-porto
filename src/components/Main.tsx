@@ -32,7 +32,7 @@ function Main() {
             <a href="https://github.com/reynaldi1912" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/rynld/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
-          <h1>Reynaldi Ramadhani Eka Purnomoo</h1>
+          <h1>Reynaldi Ramadhani Eka Purnomo</h1>
           <p>Full Stack Developer</p>
 
           <div className="mobile_social_icons">
